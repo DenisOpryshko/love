@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="heart.png">
+    <title>Кусь</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="text animate__animated mov  text-1 ">Привет, Саш</div>
+    <div class="text animate__animated mov text-2">хочу сказать тебе привет</div>
+    <div class="text animate__animated mov text-3">в живую</div>
+    <div class="text animate__animated mov text-4">улыбаясь</div>
+    <div class="text animate__animated mov  text-1">Знаешь</div>
+    <div class="text animate__animated mov text-2">Однажды я хочу проснутся утром</div>
+    <div class="text animate__animated mov text-3">холодным, теплым, солнечным, пасмурным</div>
+    <div class="text animate__animated mov text-4">не важно...</div>
+    <div class="text animate__animated mov text-1">Я проснусь от того</div>
+    <div class="text animate__animated mov text-2">что мне придёт сообщение...</div>
+    <div class="text animate__animated mov text-3">от тебя</div>
+    <div class="text animate__animated mov text-4">а там</div>
+    <div class="text animate__animated mov text-1">3 слова</div>
+    <div class="text animate__animated mov text-2">"Я люблю тебя"</div>
+    <div class="text animate__animated mov text-3">И этот день и это утро</div>
+    <div class="text animate__animated mov text-4">будет самым лучшим в моей жизни</div>
+    <div class="text animate__animated mov text-1">и любая погода за окном</div>
+    <div class="text animate__animated mov text-2">станет самой прекрасной</div>
+    <div class="text animate__animated mov text-3">самой любимой</div>
+    <div class="text animate__animated mov text-4">Ведь когда ты счаслив</div>
+    <div class="text animate__animated mov text-1">Ты любишь все вокруг</div>
+    <div class="text animate__animated mov text-2">Вот только представлю это</div>
+    <div class="text animate__animated mov text-3">И стал чуточку счасливей</div>
+    <div class="text animate__animated mov text-4">Ты всегда делаешь меня счасливым</div>
+    <div class="text animate__animated mov text-1">Иногда, я просто слушаю тебя</div>
+    <div class="text animate__animated mov text-2">и меня охватывает чувство</div>
+    <div class="text animate__animated mov text-3">с головы до ног</div>
+    <div class="text animate__animated mov text-4">будто загораются лампочки</div>
+    <div class="text animate__animated mov text-1">и становится тепло...</div>
+
+    <div class="image">
+        <div class="image-text">Для любимой девочки</div>
+        <div class="image-photo"></div>
+    </div>
+
+    <footer>
+        <p>2020(с)Скяпа Индастрис</p>
+    </footer>
+</body>
+<script>
+
+
+
+
+$(window).scroll(function() {
+    $('.mov').each(function() {
+        var imagePos = $(this).offset().top
+        var topOfWindow = $(window).scrollTop()
+        if (imagePos < topOfWindow+250) {
+            $(this).addClass('animate__fadeOut')
+        }
+
+        if (imagePos < topOfWindow-2000) {
+            $('body').css('background','#FFFACD');
+        }
+
+    
+    })
+})
+</script>
+</html>
